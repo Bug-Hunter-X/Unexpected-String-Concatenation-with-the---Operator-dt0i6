@@ -1,0 +1,2 @@
+function foo(a,b){return a+b;}console.log(foo(1, "1")); // Output: 11
+This is unexpected behavior because the + operator will perform string concatenation when one of the operands is a string, even if the other operand is a number.  This can lead to unexpected results if you are not aware of this behavior. The function should explicitly check and convert types to avoid the unexpected concatenation behavior.
